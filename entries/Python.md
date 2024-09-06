@@ -1,0 +1,3 @@
+# Python
+
+**Python** is a high-level, interpreted programming language known for its _simplicity, readability, and versatility_. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python is widely used for web development, data analysis, machine learning, automation, scientific computing, and more. Its extensive standard library and vibrant community contribute to its popularity, making it a great choice for both beginners and experienced developers.

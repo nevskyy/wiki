@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="{% static 'encyclopedia/styles.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="row">
+      <div class="sidebar col-lg-2 col-md-3">
+        <div class="image-container">
+        </div>
+        <h2>Wiki</h2>
+        <form
+          action="{% url 'search' %}"
+          method="post"
+        >
+          {% csrf_token %}
+          <input
+            class="search"
+            type="text"
+            name="q"
+            placeholder="Search Encyclopedia"
+          />
+        </form>
+        <div class="home">
+          <span class="material-symbols-outlined"> home </span>
+          <a href="{% url 'index' %}">Home</a>
+        </div>
+        <div class="page">
+          <span class="material-symbols-outlined"> note_add </span>
+          <a href="{% url 'new_page' %}"> Create New Page </a>
+        </div>
+        <div class="random">
+          <span class="material-symbols-outlined"> shuffle </span>
+          <a href="{% url 'show_random_page' %}">Random Page</a>
+        </div>
+        {% block nav %} {% endblock %}
+      </div>
+      <div class="main col-lg-10 col-md-9">{% block body %} {% endblock %}</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+code {
+    white-space: pre;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+textarea {
+    height: 50vh;
+    width: 80%;
+}
+
+.main {
+    padding: 10px;
+}
+
+.search {
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.sidebar {
+    background-color: #f0f0f0;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-top: 5px;
+}
+
+.home, .page, .random {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.image-container {
+    /* border: 1px solid lime; */
+    width: 150px;
+    height: 150px;
+    background-image: url('Wikipedia-logo_\(inverse\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list-group-item:hover {
+    color: #fff;
+    background-color: #0D6EFD; 
+}
+.list-group-item:active,
+.list-group-item:focus {
+    background-color: #3a3a3a; 
+}
+

@@ -1,0 +1,2 @@
+# React
+**React** is a *JavaScript* library developed by Facebook for building user interfaces, particularly single-page applications. It allows developers to create reusable UI components that manage their own state, making it efficient for **rendering dynamic content**. React uses a **virtual DOM** to optimize rendering performance, updating only the parts of the page that need to change when data changes !!!.
